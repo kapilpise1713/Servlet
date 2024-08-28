@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Servletbasics</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+ <!-- - Generic Servlet -->
+  <servlet>
+        <servlet-name>CyberServlet1</servlet-name>
+        <servlet-class>com.genericServlet.Cyber</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+       <servlet-name>CyberServlet1</servlet-name>
+       <url-pattern>/success</url-pattern>
+  </servlet-mapping>
+  
+  <!-- - Generic Servlet2 -->
+  <servlet>
+        <servlet-name>CyberServlet2</servlet-name>
+        <servlet-class>com.genericServlet.GenericServlet2</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+       <servlet-name>CyberServlet2</servlet-name>
+       <url-pattern>/Servlet2</url-pattern>
+  </servlet-mapping>
+  
+  <!-- - Generic Servlet3 Addition -->
+  <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>com.genericServlet.Addition</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+       <servlet-name>AddServlet</servlet-name>
+       <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  
+   <!-- - Generic Servlet3 Addition -->
+  <servlet>
+        <servlet-name>PrimeServlet</servlet-name>
+        <servlet-class>com.genericServlet.Prime</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+       <servlet-name>PrimeServlet</servlet-name>
+       <url-pattern>/prime</url-pattern>
+  </servlet-mapping>
+  
+  <!-- - Generic Servlet3 UserName & Password -->
+  <servlet>
+        <servlet-name>UserName_Password</servlet-name>
+        <servlet-class>com.genericServlet.UsernamePasswordCheck</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+       <servlet-name>UserName_Password</servlet-name>
+       <url-pattern>/UserPass</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+<!-- HTTP Servlet  -->
+  <servlet>
+       <servlet-name>MyServlet</servlet-name>
+       <servlet-class>com.httpServlet.MyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+       <servlet-name>MyServlet</servlet-name>
+       <url-pattern>/myservlet</url-pattern>
+  </servlet-mapping>
+
+
+  
+  
+</web-app>
